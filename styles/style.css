@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 14px;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(60deg, indigo,violet, lavender,violet,indigo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card{ 
+  background-color: #f7f7f7;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+  border-radius: 10px;
+}
+.container{
+  margin: 20px auto;
+  text-align: left;
+  width: 350px;
+}
+.container h2{
+  font-size: 2rem;
+}
+
+h1{
+  letter-spacing: 1px;
+}
+
+h3{
+  padding-bottom: 5px;
+  margin: 15px 0 10px;
+  border-bottom: 1px solid #bbb;
+  text-align: left;
+}
+h4{
+  transform: uppercase;
+  text-align: left;
+}
+
+.inc-exp-container{
+  display:flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) ;
+}
+
+.inc-exp-container > div{
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+.inc-exp-container >div:first-of-type{
+  border-right: 1px solid #dedede;
+  padding-right: 40px;
+}
+.money{
+  font-size: 20px;
+  margin: 5px 0;
+}
+.money-plus{
+  color: green;
+}
+.money-minus{
+  color: red;
+}
+label{
+  display: inline-block;
+  margin: 10px 0; 
+}
+input{
+  display: block;
+  border: 1px solid #dedede;
+  padding: 10px;
+  width: 100%;
+}
+.btn{
+  cursor: pointer;
+  background-color: #1c2042;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  margin: 10px 0 30px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn:focus, .delete-btn:focus{
+  outline: 0;
+}
+.list{
+  list-style: none;
+  margin-bottom: 20px;
+}
+.list li{
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) ;
+  color: #1c2042;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  width: 320px;
+}
+.list li.plus{
+  border-right: 5px solid green;
+}
+.list li.minus{
+  border-right: 5px solid red;
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: red;
+  border: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn{
+  opacity: 1;
+}
