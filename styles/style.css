@@ -64,15 +64,14 @@ h4{
 .inc-exp-container > div{
   flex: 1;
   text-align: center;
-  margin: 0 20px;
+  margin: 5px 15px;
 }
 .inc-exp-container >div:first-of-type{
   border-right: 1px solid #dedede;
   padding-right: 40px;
 }
 .money{
-  font-size: 20px;
-  margin: 5px 0;
+  font-size: 15px;
 }
 .money-plus{
   color: green;
@@ -117,7 +116,7 @@ input{
   position: relative;
   padding: 10px;
   margin: 10px 0;
-  width: 320px;
+  width: 280px;
 }
 .list li.plus{
   border-right: 5px solid green;
